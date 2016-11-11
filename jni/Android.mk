@@ -20,4 +20,4 @@ LOCAL_MODULE    := rh-test
 LOCAL_SRC_FILES := ion.cc massage.cc rh-test.cc rowsize.cc templating.cc
 LOCAL_CPPFLAGS := -std=c++11
 
-include $(BUILD_SHARED_LIBRARY)
+include $(BUILD_EXECUTABLE)
