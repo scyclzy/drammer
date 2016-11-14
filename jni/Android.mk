@@ -21,3 +21,13 @@ LOCAL_SRC_FILES := ion.cc massage.cc rh-test.cc rowsize.cc templating.cc
 LOCAL_CPPFLAGS := -std=c++11
 
 include $(BUILD_EXECUTABLE)
+
+
+##########################################################################
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE    := pagemap_info
+LOCAL_SRC_FILES := pagemap_info.c
+
+include $(BUILD_EXECUTABLE)

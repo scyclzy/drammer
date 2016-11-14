@@ -272,7 +272,7 @@ int do_hammer(uint8_t *virt_row,
         }
     }
     if (new_flips > 0)  
-        printf("[TMPL - deltas] virtual row %d: ", (uintptr_t) virt_row / rowsize);
+        printf("[TMPL - deltas] virtual row %u: ", (uintptr_t) virt_row / rowsize);
 
     return ns_per_read;
 }
@@ -356,7 +356,7 @@ void TMPL_run(std::vector<struct ion_data *> &chunks,
                     flips, exploitable_flips, bytes_hammered, seconds_passed, median_readtime, kb_per_flip, percentage_exploitable, spc_flips, to1, to0);
             print("[TMPL - hammer] virtual row %d: %p | physical row %d: %p\n", 
                     virt_row_index, virt_row, phys_row_index, phys_row);
-            printf("[TMPL - deltas] virtual row %d: ", (uintptr_t) virt_row_index);
+            printf("[TMPL - deltas] virtual row %u: ", (uintptr_t) virt_row_index);
 
         
             uintptr_t above_row = virt_row - rowsize;

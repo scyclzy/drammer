@@ -77,7 +77,7 @@ static inline uintptr_t get_phys_addr(uintptr_t virtual_addr) {
   
     // Check the "page present" flag.
     if ((value & (1ULL << 63)) == 0) {
-        printf("page not present? virtual address: %p | value: %p\n", virtual_addr, value);
+        printf("page not present? virtual address: %p | value: %llu\n", virtual_addr, value);
         return 0;
     }
 
